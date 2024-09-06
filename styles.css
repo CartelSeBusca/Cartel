@@ -1,46 +1,18 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #fae5d3;
-    position: relative;
+    background-color: #f4f4f4;
 }
-
-h1 {
-    color: #333;
-    margin-top: 20px;
-}
-
-form {
-    margin: 20px 0;
-}
-
-.image-container {
+#poster {
     position: relative;
     display: inline-block;
-    margin-top: 20px;
 }
-
-canvas {
-    border: 1px solid #000;
+#posterImage {
+    width: 100%;
+    height: auto;
 }
-
-/* Crear líneas transversales */
-body::before {
-    content: "";
+#canvas {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(
-        45deg,
-        #edbb99,
-        #edbb99 10px,
-        transparent 10px,
-        transparent 20px
-    );
-    opacity: 0.5;
-    z-index: -1;
 }
