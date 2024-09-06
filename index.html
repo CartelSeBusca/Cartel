@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crea tu cartel</title>
+    <title>Póster de Se Busca</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Crea tu cartel</h1>
-    <div class="image-container">
+    <h1>Crear Póster de "Se Busca"</h1>
+    <form id="uploadForm">
+        <input type="file" id="upload" accept="image/*">
+        <button type="submit">Subir Foto</button>
+    </form>
+    <div id="poster">
+        <img id="posterImage" src="images/blank-poster.jpg" alt="Póster de Se Busca">
         <canvas id="canvas"></canvas>
     </div>
-    <form id="uploadForm" enctype="multipart/form-data">
-        <input type="file" id="fileInput" accept="image/*">
-        <button type="submit">Procesar Imagen</button>
-    </form>
     <script src="script.js"></script>
 </body>
 </html>
